@@ -32,16 +32,15 @@ warp-cli registration show
 
 # Test
 curl https://www.cloudflare.com/cdn-cgi/trace/
+```
 
+### Switching modes
+```bash
+warp-cli set-mode --help
 
-
-
-warp-cli help set-mode
-
-
+warp-cli help set-mode doh
 
 warp-cli registration show
-
 ```
 
 -----------------------------------------------------------------------------------------
