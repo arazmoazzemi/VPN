@@ -19,8 +19,9 @@ echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] ht
 sudo apt-get update && sudo apt-get -y install cloudflare-warp
 ```
 
-[Using WARP Client(]https://developers.cloudflare.com/warp-client/get-started/linux/)
+[Using WARP Client](https://developers.cloudflare.com/warp-client/get-started/linux/)
 
+```bash
 warp-cli registration new
 
 warp-cli connect
@@ -31,7 +32,6 @@ warp-cli registration show
 curl https://www.cloudflare.com/cdn-cgi/trace/
 
 
-
 warp-cli --help
 
 warp-cli help set-mode
@@ -40,6 +40,7 @@ warp-cli help set-mode
 
 warp-cli registration show
 
+```
 
 -----------------------------------------------------------------------------------------
 
