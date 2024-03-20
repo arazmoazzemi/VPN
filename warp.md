@@ -5,10 +5,10 @@
 [Cloudflare WARP packages](https://pkg.cloudflareclient.com/#ubuntu])
 
 
-
-# Add cloudflare gpg key
+### Add cloudflare gpg key
+```bash
 curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
-
+```
 
 # Add this repo to your apt repositories
 echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
