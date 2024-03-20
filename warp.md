@@ -59,9 +59,12 @@ The provided commands reset the default policies for the INPUT, OUTPUT, and FORW
 
 ```bash
 iptables -P INPUT ACCEPT
-iptables -P OUTPUT ACCEPT
 iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -t nat -F
+iptables -t mangle -F
 iptables -F
+iptables -X
 
 ```
 ### We have two interfaces for provide nat , CloudflareWARP and ens32
