@@ -75,32 +75,12 @@ sudo iptables -L -v -n | more
 ```
 
 
-CloudflareWARP
-
-ens32
 
 
 
 
-
-
-sudo iptables -F
-
-
-# check "netfilter-persistent save" "Saving iptables changes"
-sudo apt-get -y install iptables-persistent
-sudo netfilter-persistent save
-sudo systemctl enable netfilter-persistent
-
-
-
-
-
-
-
-
-
---
+### Warp+ licences, It may not work, You will find it
+---
 
 warp-cli registration license 41x8Cg2j-rYu7C123-D2jbE943
 warp-cli registration license 0In49xR7-PXR14G95-261KxgO0
