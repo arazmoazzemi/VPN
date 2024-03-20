@@ -1,9 +1,8 @@
 ## CLOUDFLARE WARP ON UBUNTU
 
-
-
+---
 [Cloudflare WARP packages](https://pkg.cloudflareclient.com/#ubuntu])
-
+---
 
 ### Add cloudflare gpg key
 ```bash
@@ -18,8 +17,9 @@ echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] ht
 ```bash
 sudo apt-get update && sudo apt-get -y install cloudflare-warp
 ```
-
+---
 [Using WARP Client](https://developers.cloudflare.com/warp-client/get-started/linux/)
+---
 
 ```bash
 warp-cli registration new
