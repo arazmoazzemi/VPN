@@ -101,13 +101,6 @@ sudo systemctl enable netfilter-persistent
 
 
 --
-https://api.cloudflareclient.com/v0a418/reg
-
-
-
-
-
-
 
 warp-cli registration license 41x8Cg2j-rYu7C123-D2jbE943
 warp-cli registration license 0In49xR7-PXR14G95-261KxgO0
