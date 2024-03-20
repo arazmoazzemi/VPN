@@ -87,6 +87,8 @@ iptables -t nat -A POSTROUTING -o CloudflareWARP -j MASQUERADE
 iptables -A FORWARD -i CloudflareWARP -o ens32 -m state --state RELATED,ESTABLISHED -j ACCEPT
 iptables -A FORWARD -i ens32 -o CloudflareWARP -j ACCEPT
 
+netfilter-persistent save
+
 sudo iptables -L -v -n | more
 ```
 ---
