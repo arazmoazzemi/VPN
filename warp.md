@@ -57,12 +57,21 @@ sudo systemctl enable netfilter-persistent
 If you mistakenly enterd the initial input values of iptables, you can rewrite the tables again with the following command.  
 The provided commands reset the default policies for the INPUT, OUTPUT, and FORWARD chains to ACCEPT, and then flush all the rules from all the chains.
 
-```
+```bash
 iptables -P INPUT ACCEPT
 iptables -P OUTPUT ACCEPT
 iptables -P FORWARD ACCEPT
 iptables -F
 
+```
+### We have two interfaces for provide nat <CloudflareWARP and ens32>
+
+```
+iptables -t nat -A POSTROUTING -o CloudflareWARP -j MASQUERADE
+iptables -A FORWARD -i CloudflareWARP -o ens32 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i ens32 -o CloudflareWARP -j ACCEPT
+
+sudo iptables -L -v -n | more
 ```
 
 
@@ -76,7 +85,7 @@ ens32
 
 
 sudo iptables -F
-sudo iptables -L -v -n | more
+
 
 # check "netfilter-persistent save" "Saving iptables changes"
 sudo apt-get -y install iptables-persistent
@@ -84,10 +93,6 @@ sudo netfilter-persistent save
 sudo systemctl enable netfilter-persistent
 
 
-
-iptables -t nat -A POSTROUTING -o CloudflareWARP -j MASQUERADE
-iptables -A FORWARD -i CloudflareWARP -o ens32 -m state --state RELATED,ESTABLISHED -j ACCEPT
-iptables -A FORWARD -i ens32 -o CloudflareWARP -j ACCEPT
 
 
 
