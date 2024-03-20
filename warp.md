@@ -96,56 +96,6 @@ sudo systemctl enable netfilter-persistent
 
 
 
-----------------------------------------------------------------
-
-apt-get install pptpd
-
-
-apt-get install iptables
-
-
-
-iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o ens32 -j MASQUERADE
-iptables -A FORWARD -p tcp --syn -s 192.168.0.0/24 -j TCPMSS --set-mss 1356
-
-
-iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o CloudflareWARP -j MASQUERADE
-
-----------------------------------------------------------------
-
-sudo sysctl net.ipv4.ping_group_range
-net.ipv4.ping_group_range= 0 10000
-
-
-echo 0 10001 | sudo tee /proc/sys/net/ipv4/ping_group_range
-
-
-cloudflared tunnel run --icmpv4-src ens32
-
-
----------------------------------
-sudo apt-get update && sudo apt-get install -y python3.10 git pip
-
-git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED.git
-
-pip install -r requirements.txt
-cd WARP-UNLIMITED-ADVANCED/
-
-
-warp-cli registration show
-
-# Device ID: e4952ae4-364d-408e-8d23-d2c8d822ecc0
-
-
-nano config.py
-
-
-
-
-python3 warp-plus.py
-
-
-cat runtime-log.txt
 
 
 
@@ -292,15 +242,3 @@ warp-cli registration license RD5903Og-yJ7i25l6-70d1Kg4s
 warp-cli registration license 13F6ic9Z-4963CtQf-9Z8a35lN
 warp-cli registration license O5Y46G1E-K397w6Sk-C978BVt3
 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
-warp-cli registration license 
