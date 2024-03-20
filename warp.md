@@ -73,11 +73,7 @@ iptables -A FORWARD -i ens32 -o CloudflareWARP -j ACCEPT
 
 sudo iptables -L -v -n | more
 ```
-
-
-
-
-
+---
 
 ### Warp+ licences, It may not work, You will find it
 ---
@@ -215,3 +211,4 @@ warp-cli registration license RD5903Og-yJ7i25l6-70d1Kg4s
 warp-cli registration license 13F6ic9Z-4963CtQf-9Z8a35lN
 warp-cli registration license O5Y46G1E-K397w6Sk-C978BVt3
 
+---
