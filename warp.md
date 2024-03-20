@@ -22,7 +22,7 @@ sudo apt-get update && sudo apt-get -y install cloudflare-warp
 ---
 
 ### Initial Connection
-###To connect for the very first time:
+### To connect for the very first time:
 
 ```bash
 warp-cli --help
