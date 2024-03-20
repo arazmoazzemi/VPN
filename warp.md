@@ -45,8 +45,25 @@ warp-cli help set-mode doh
 
 warp-cli registration show
 ```
+---
 
------------------------------------------------------------------------------------------
+### Install iptables
+```bash
+sudo apt-get -y install iptables-persistent
+sudo netfilter-persistent save
+sudo systemctl enable netfilter-persistent
+```
+
+If you mistakenly enterd the initial input values of iptables, you can rewrite the tables again with the following command.  
+The provided commands reset the default policies for the INPUT, OUTPUT, and FORWARD chains to ACCEPT, and then flush all the rules from all the chains.
+
+```
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -F
+
+```
 
 
 CloudflareWARP
@@ -55,10 +72,6 @@ ens32
 
 
 
-iptables -P INPUT ACCEPT
-iptables -P OUTPUT ACCEPT
-iptables -P FORWARD ACCEPT
-iptables -F
 
 
 
