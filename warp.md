@@ -78,7 +78,7 @@ sudo iptables -L -v -n | more
 ### WARP UNLIMITED ADVANCED
 [Github lnk](https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED)
 
----bash
+```bash
 sudo apt-get update && sudo apt-get install -y python3.10 git pip
 git clone https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED.git
 pip install -r requirements.txt
