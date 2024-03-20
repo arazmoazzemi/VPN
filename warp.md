@@ -47,6 +47,16 @@ warp-cli registration show
 ```
 ---
 
+### enable routing 
+
+```bash
+sudo nano /etc/sysctl.conf
+net.ipv4.ip_forward=1
+
+sysctl -p
+```
+
+
 ### Install iptables
 ```bash
 sudo apt-get -y install iptables-persistent
