@@ -22,6 +22,8 @@ sudo apt-get update && sudo apt-get -y install cloudflare-warp
 ---
 
 ```bash
+warp-cli --help
+
 warp-cli registration new
 
 warp-cli connect
@@ -32,7 +34,7 @@ warp-cli registration show
 curl https://www.cloudflare.com/cdn-cgi/trace/
 
 
-warp-cli --help
+
 
 warp-cli help set-mode
 
