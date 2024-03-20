@@ -77,7 +77,7 @@ sudo iptables -L -v -n | more
 
 ### Warp+ licences, It may not work, You will find it
 ---
-
+```bash
 warp-cli registration license 41x8Cg2j-rYu7C123-D2jbE943
 warp-cli registration license 0In49xR7-PXR14G95-261KxgO0
 warp-cli registration license 4q81P5wN-C5du136F-L3xJ058v
@@ -210,5 +210,6 @@ warp-cli registration license 9W2OA1D8-0L16bZ4u-5P6Yw1Z8
 warp-cli registration license RD5903Og-yJ7i25l6-70d1Kg4s
 warp-cli registration license 13F6ic9Z-4963CtQf-9Z8a35lN
 warp-cli registration license O5Y46G1E-K397w6Sk-C978BVt3
+```
 
 ---
