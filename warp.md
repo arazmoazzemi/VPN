@@ -64,7 +64,7 @@ iptables -P FORWARD ACCEPT
 iptables -F
 
 ```
-### We have two interfaces for provide nat <CloudflareWARP and ens32>
+### We have two interfaces for provide nat , CloudflareWARP and ens32
 
 ```
 iptables -t nat -A POSTROUTING -o CloudflareWARP -j MASQUERADE
