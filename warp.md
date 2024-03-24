@@ -120,6 +120,31 @@ cat runtime-log.txt
 ### Warp+ licences, It may not work, You will find it
 ---
 ```bash
+
+
+warp-cli registration license 2m3wY8L5-75x0Oh2K-OZN2195c
+warp-cli registration license 18ak49Gv-g9ys7N51-Z6UJp875
+warp-cli registration license mz61p98F-49gQIo10-9zK5ZX78
+warp-cli registration license 0432CriT-HKvC9861-W34h90gU
+warp-cli registration license GZ42A6C8-d5wP3z84-Pd05u42r
+warp-cli registration license a02v94wE-Q5A48g2b-W94ROZ76
+warp-cli registration license 2hEn61O8-QSt8036i-AH5M7C49
+warp-cli registration license h9xM2y76-d01B5v9t-875xBQ0n
+warp-cli registration license 2Ii537Tq-78o3u4Ik-2h9O8UI5
+warp-cli registration license H257Efo6-c048Oqk6-5T96jmG8
+
+warp-cli registration license V08F25pm-Uw58P4G9-wf2k3S64
+warp-cli registration license Q297Hin6-9w2y34PY-8V4Oj59B
+warp-cli registration license G8295PhL-8Fx4zQ52-MJ4f185L
+warp-cli registration license 32E07qHW-8V3t2Gz6-XLP2H830
+warp-cli registration license cH783PL5-gL2O495H-z834k5dA
+warp-cli registration license 947Y2sBn-63RN4Y9S-02D4R5rv
+warp-cli registration license Z1E04RT8-Sm6205ji-d4E9WJ56
+warp-cli registration license 7lJ3OX94-XTJ1657W-40mVa5o1
+warp-cli registration license 51y7rg4s-I08Hq9a5-982tT5fY
+warp-cli registration license 0z24MN9g-r0o346SG-93DTs6M0
+
+
 warp-cli registration license 41x8Cg2j-rYu7C123-D2jbE943
 warp-cli registration license 0In49xR7-PXR14G95-261KxgO0
 warp-cli registration license 4q81P5wN-C5du136F-L3xJ058v
